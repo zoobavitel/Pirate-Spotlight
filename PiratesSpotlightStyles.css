@@ -22,3 +22,17 @@
 }
 
 /* Header Style End */
+
+/* Table Style */
+
+table {
+	border-spacing: 30px;
+	
+}
+
+th, td {
+	padding: 15px;
+	
+}
+
+/* Table Style End */
