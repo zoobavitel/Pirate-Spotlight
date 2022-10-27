@@ -26,8 +26,10 @@
 /* Table Style */
 
 table {
+	width: 100%;
 	border-spacing: 30px;
-	
+	margin-left: auto;
+	margin-right: auto;
 }
 
 th, td {
