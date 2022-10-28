@@ -37,4 +37,59 @@ th, td {
 	
 }
 
+
+html {
+	scroll-behavior: smooth;
+}
+
+#wrapper {
+	display: block;
+	height: 720px;
+	width: 960px;	
+}
+
+#container {
+	background-color: #FFC;
+	display: block;
+	float: left;
+	height: 720px;
+	width: 960px;
+	overflow: auto;
+}
+
+#prev {
+	background-image: ;
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: block;
+	float: left;
+	height: 720px;
+	width: 100px;
+	position: relative;
+	z-index: 99;
+}
+
+#next {
+	background-image: ;
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: block;
+	float: right;
+	height: 720px;
+	width: 100px;
+	position: relative;
+	z-index: 99;
+	
+}
+
+#slider {
+	display: block;
+	float: left;
+	height: 720px;
+	width: 960px;
+	overflow: hidden;
+	position: absolute;
+}
+
+
 /* Table Style End */
