@@ -1,5 +1,9 @@
 /* CSS Document */
 
+*{
+	margin: 0;
+}
+
 /* Header Style */
 .header {
 	padding: 10px 16px;
@@ -38,9 +42,30 @@ th, td {
 }
 
 
+/* Table Style End */
+
+
+#wrapper,
+#Announcements,
+#Spotlight,
+#Hotspots,
+#Suggestions,
+#QnA{
+	height: 700px;
+}
+
+#Announcements{
+	background-color: ;
+}
+
+
 html {
 	scroll-behavior: smooth;
 }
+
+
+
+/* Spotlight Buttons*/
 
 #wrapper {
 	display: block;
@@ -91,5 +116,6 @@ html {
 	position: absolute;
 }
 
+/* Spotlight End */
 
-/* Table Style End */
+

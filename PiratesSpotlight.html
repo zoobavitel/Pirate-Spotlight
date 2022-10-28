@@ -8,63 +8,82 @@
 
 <body>
 	<!-- Header -->
-	<div class="header" id="pageHeader">
+	<header class="header" id="pageHeader">
 		<div style="overflow-x: auto;">
 			<table class="center">
 				<tr>
-					<th>Pirates Spotlight</th>
-					<th>Announcements</th>
-					<th>Pirate Of The Week</th>
-					<th>Hotspots</th>
-					<th>Suggestions</th>
-					<th>Contact and About Us</th>
+					<nav>
+						<a href="wrapper">Pirate Spotlight</a>
+						<a href="Announcements">Announcements</a>
+						<a href="Spotlight">Pirate Of The Week</a>
+						<a href="Hotspots">Hotspots</a>
+						<a href="Suggestions">Suggestions</a>
+						<a href="QnA">Contact and About Us</a>
+					</nav>
 				</tr>
 			</table>
 		</div>
-	</div>
+	</header>
 	
 	
-
+	
+	
+	
+	<script type="text/javascript">
+		$('#slider').cycle({
+			fx:	'scrollHorz',
+			speed: 'slow',
+			
+			next: '#next',
+			prev: '#prev'
+		});
+	</script>
 
 	<!-- Main Webpage Info -->
 	<!-- Entrance & Images -->
 	<h1>For Pirates, By Pirates.</h1>
-	<div class="Entrance">
-			<img src="images/1 IMG_20200127_123000.jpg">
-				
+	<div id="wrapper">
+		<div id="container">
+			<div class="controller" id="prev"></div>
+			<div id="slider"></div>
+			<div class="controller" id="next"></div>
 		</div>
 	</div>
 	
+		
 	<!-- Announcements -->
-	<div class="Announcements">
+	<section id="Announcements">
 		<h1>Announcements</h1>
 		<h3>Check here for any updates about website downtime, critical university weather, and other updates.</h3>
-	</div>
+	</section>
+		
+		
 	
 	<!-- Pirate of the Week -->
-	<div class="Spotlight">
+	<section id="Spotlight">
 		<h1>Pirate Of The Week</h1>
 		<h3>Here we showcase one of ECU's own pirate for a week to see how the pirates of today are becoming the inovators of tomorrow.</h3>
-	</div>
+	</section>
+	
 	
 	<!-- Hotspots -->
-	<div class="Hotspots">
+	<section id="Hotspots">
 		<h1>Hotspots</h1>
 		<h3>Feeling like you need a break from the books? Here is where we will share some weekend hotspots for you to relax and have fun at.</h3>
-	</div>
+	</section>
 	
 	<!-- Suggestions -->
-	<div class="Suggestions">
+	<section id="Suggestions">
 		<h1>Suggestions</h1>
 		<h3>We take multiple suggestion about what we should add, remove, and change about our webpage.</h3>
-	</div>
+	</section>
 	
 	<!-- Contact and About -->
-	<div class="Contact and About Us">
+	<section id="QnA">
 		<h2>Contact and About Us</h2>
 		<p>Created for CSCI 3030 Fall 2022</p>
 		<p>Created by Evan Brown, Cris Zbavitel, Johnny Rebollar, Austin Lee, Saleh Barakat</p>
-	</div>
+	</section>
 
 	<script>
 		// Header Style
