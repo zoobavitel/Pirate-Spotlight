@@ -70,7 +70,7 @@ html {
 #wrapper {
 	display: block;
 	height: 720px;
-	width: 960px;	
+	width: 1720px;	
 }
 
 #container {
@@ -78,24 +78,24 @@ html {
 	display: block;
 	float: left;
 	height: 720px;
-	width: 960px;
+	width: 1720px;
 	overflow: auto;
 }
 
 #prev {
-	background-image: ;
+	background-image: url(C:\Users\cris\Desktop\pirates-spotlight\rightbutton - Copy.png);
 	background-repeat: no-repeat;
 	background-position: center center;
 	display: block;
 	float: left;
-	height: 720px;
+	height: 700px;
 	width: 100px;
 	position: relative;
 	z-index: 99;
 }
 
 #next {
-	background-image: ;
+	background-image: url(C:\Users\cris\Desktop\pirates-spotlight\rightbutton.png);
 	background-repeat: no-repeat;
 	background-position: center center;
 	display: block;
@@ -111,7 +111,7 @@ html {
 	display: block;
 	float: left;
 	height: 720px;
-	width: 960px;
+	width: 1720px;
 	overflow: hidden;
 	position: absolute;
 }
