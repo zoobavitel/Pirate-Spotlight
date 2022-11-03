@@ -83,7 +83,7 @@ html {
 }
 
 #prev {
-	background-image: url(C:\Users\cris\Desktop\pirates-spotlight\rightbutton - Copy.png);
+	background-image: url(C:\Users\cris\Desktop\pirates-spotlight\leftbutton.png);
 	background-repeat: no-repeat;
 	background-position: center center;
 	display: block;
@@ -119,3 +119,55 @@ html {
 /* Spotlight End */
 
 
+/* Hotspot Buttons */
+
+#wrapper2 {
+	display: block;
+	height: 720px;
+	width: 1720px;	
+}
+
+#container2 {
+	background-color: #FFC;
+	display: block;
+	float: left;
+	height: 720px;
+	width: 1720px;
+	overflow: auto;
+}
+
+#prev2 {
+	background-image: url(C:\Users\cris\Desktop\pirates-spotlight\rightbutton - Copy.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: block;
+	float: left;
+	height: 700px;
+	width: 100px;
+	position: relative;
+	z-index: 99;
+}
+
+#next2 {
+	background-image: url(C:\Users\cris\Desktop\pirates-spotlight\rightbutton.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: block;
+	float: right;
+	height: 720px;
+	width: 100px;
+	position: relative;
+	z-index: 99;
+	
+}
+
+#slider2 {
+	display: block;
+	float: left;
+	height: 720px;
+	width: 1720px;
+	overflow: hidden;
+	position: absolute;
+}
+
+/* Hotspot Buttons End */
