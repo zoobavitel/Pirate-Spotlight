@@ -9,9 +9,9 @@ body {
 
 .container {
 	margin: 0 auto;
-	margin-top: 20px;
+	margin-top: 0px;
 	position: relative;
-	width: 70%;
+	width: 100%;
 	height: 0;
 	padding-bottom: 40%;
 }
@@ -95,10 +95,14 @@ body {
 
 
 /* Header Style */
-.header {
+
+
+.navbar {
 	padding: 10px 16px;
-	background: #555;
+	background: #42145F;
 	color: #f1f1f1;
+	font-size: 14;
+	font-family: "Oswald", sans-serif;
 }
 
 .content {
@@ -135,17 +139,26 @@ th, td {
 /* Table Style End */
 
 
-#wrapper,
-#Announcements,
-#Spotlight,
-#Hotspots,
-#Suggestions,
-#QnA{
-	height: 700px;
+
+/* Entrance Style Start */
+.entrance{
+	position: relative;
+	font-family: "Oswald", sans-serif;
+    color: #000000;
+	background-color: #FEC923;
+	padding: 10px 15px;
+	
 }
 
-#Announcements{
-	background-color: ;
+.map {
+	right: 375;
+}
+
+.desc{
+    color: #42145F;
+	font-family: "Quattrocento", serif;
+    background-color: #6000C4;
+    text-align: left;
 }
 
 
@@ -153,13 +166,66 @@ html {
 	scroll-behavior: smooth;
 }
 
+/* Entrance Style End */
 
 
 
 
+/* Hotspot Style */
 
-/* Hotspot Buttons */
+.container2 {
+	margin: 0 auto;
+	margin-top: 0px;
+	position: relative;
+	width: 100%;
+	height: 500px;
+}
 
+div.gallery {
+  border: 1px solid #ccc;
+}
 
+div.gallery:hover {
+  border: 1px solid #777;
+}
 
-/* Hotspot Buttons End */
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Hotspot Style End */
