@@ -11,57 +11,44 @@
 	<header class="header" id="pageHeader">
 		<div style="overflow-x: auto;">
 			<table class="center">
-				<tr>
-					<nav>
-						<a href="wrapper">Pirate Spotlight</a>
-						<a href="Announcements">Announcements</a>
-						<a href="Spotlight">Pirate Of The Week</a>
-						<a href="Hotspots">Hotspots</a>
-						<a href="Suggestions">Suggestions</a>
-						<a href="QnA">Contact and About Us</a>
-					</nav>
-				</tr>
 			</table>
 		</div>
 	</header>
-	
-	
-	
-	
-	
-	<script src="C:\Users\cris\Desktop\pirates-spotlight\js\jquery.cycle.all.js"></script>
-	<script src="C:\Users\cris\Desktop\pirates-spotlight\js\jquery-3.6.1.min.js"></script>
-	<script type ="text/javascript">
-		$('#s2').cycle({
-    		fx:     'fade',
-    		speed:  'fast',
-    		timeout: 0,
-    		next:   '#next2',
-    		prev:   '#prev2'
-		});
-	</script>
-
+</body>
 	<!-- Main Webpage Info -->
 	<!-- Entrance & Images -->
-	<script type="text/javascript">
-		$('#slider').cycle({
-			fx:	'scrollHorz',
-			speed: 'slow',
-			
-			next: '#next',
-			prev: '#prev'
-		});
-	</script>
 	
 	
-	<h1>For Pirates, By Pirates.</h1>
-	<div id="wrapper">
-		<div id="container">
-			<div class="controller" id="prev"></div>
-			<div id="slider"><img src="C:\Users\cris\Desktop\pirates-spotlight\images\IMG_20200127_123000.jpg" width="1720" height="960"><img src="C:\Users\cris\Desktop\pirates-spotlight\images\IMG_20200127_123000.jpg" width="1720" height="960"><img src="C:\Users\cris\Desktop\pirates-spotlight\images\IMG_20200127_123000.jpg" width="1720" height="960"><img src="C:\Users\cris\Desktop\pirates-spotlight\images\IMG_20200127_123000.jpg" width="1720" height="960"></div>
-			<div class="controller" id="next"></div>
+<h1>For Pirates, By Pirates.</h1>
+	<section class="container">
+		
+		<input type="radio" name="images" id="i1" checked>
+		<input type="radio" name="images" id="i2">
+		<input type="radio" name="images" id="i3">
+		
+		
+		<div class="slide" id="one">
+			<img src="https://www.thecoastlandtimes.com/wp-content/uploads/sites/55/2020/06/ECU-General_Campus-0618.jpg" alt="https://www.thecoastlandtimes.com/wp-content/uploads/sites/55/2020/06/ECU-General_Campus-0618.jpg">
+				<label for="i2" class="pre"></label>
+				<label for="i3" class="nxt"></label>
 		</div>
-	</div>
+		<div class="slide" id="two">
+			<img src="https://www.honorsociety.org/sites/default/files/uni-campus-20147" alt="https://www.honorsociety.org/sites/default/files/uni-campus-20147">
+				<label for="i1" class="pre"></label>
+				<label for="i3" class="nxt"></label>
+		</div>
+		<div class="slide" id="three">
+			<img src="https://www.scholaradvisor.com/wp-content/uploads/East-Carolina-University.jpg" alt="https://www.scholaradvisor.com/wp-content/uploads/East-Carolina-University.jpg">
+				<label for="i2" class="pre"></label>
+				<label for="i1" class="nxt"></label>
+		</div>
+		
+		<div class="nav">
+			 <label class="dots" id="dot1" for="i1"></label>
+			 <label class="dots" id="dot2" for="i2"></label>
+			 <label class="dots" id="dot3" for="i3"></label>
+		</div>
+	</section>
 	
 		
 	<!-- Announcements -->
@@ -83,13 +70,6 @@
 	<section id="Hotspots">
 		<h1>Hotspots</h1>
 		<h3>Feeling like you need a break from the books? Here is where we will share some weekend hotspots for you to relax and have fun at.</h3>
-		<div id="wrapper2">
-			<div id="container2">
-				<div class="controller" id="prev2"></div>
-				<div id="slider2"></div>
-				<div class="controller" id="next2"></div>
-			</div>
-		</div>
 	</section>
 	
 	
@@ -124,5 +104,5 @@
 		}
 		// Header Style End
 	</script>
-</body>
+
 </html>
