@@ -1,6 +1,5 @@
 /* CSS Document */
 
-<<<<<<< HEAD
 /* Main Body Styles */
 
 .Entrance {
@@ -46,7 +45,7 @@
 	box-sizing: border-box;
 }
 
-body #news .header {
+#news .header {
   font-size: 2em;
   font-family: "Oswald", sans-serif;
   color: #592A8A;
@@ -55,7 +54,7 @@ body #news .header {
 
 
 /* Main BOdy Styles End */
-=======
+
 
 /* Spotlight Buttons*/
 
@@ -64,18 +63,6 @@ body {
 }
 
 .slideshow {
-	margin: 0 auto;
-	margin-top: 0px;
-	position: relative;
-	width: 100%;
-	height: 0;
-	padding-bottom: 40%;
-}
-.mySlides{
-	display: none
-}
-
-.spotlight {
 	margin: 0 auto;
 	margin-top: 0px;
 	position: relative;
@@ -102,9 +89,6 @@ body {
 	display: none;
 }
 
-#a1, #a2, #a3 {
-	display: none;
-}
 
 
 
@@ -126,9 +110,7 @@ body {
 
 .nxt{
 	right: 0;
-	border-radius: 3px 0 0 3px;
 }
-
 
 .dotsnav{
 	width: 100%;
@@ -151,46 +133,25 @@ body {
 }
 
 
-
 #i1:checked ~ #one,
 #i2:checked ~ #two,
 #i3:checked ~ #three{
 	z-index: 9;
 }
 
-#a1:checked ~ #uno
-#a2:checked ~ #dos
-#a3:checked ~ #tres
-#a4:checked ~ #quatro{
-	z-index: 9;
-}
 
-
-#i1:checked ~ .nav #dot1,
-#i2:checked ~ .nav #dot2,
-#i3:checked ~ .nav #dot3{
+#i1:checked ~ .dotsnav #dot1,
+#i2:checked ~ .dotsnav #dot2,
+#i3:checked ~ .dotsnav #dot3{
 	background: #fff;
 }
 
 
 
-#a1:checked ~ #a,
-#a2:checked ~ #b,
-#a3:checked ~ #c{
-	z-index: 9;
-}
-
-#a1:checked ~ .nav #dota,
-#a2:checked ~ .nav #dotb,
-#a3:checked ~ .nav #dotc
-#a4:checked ~ .nav #dotd{
-	background: #fff;
-}
 
 /* Spotlight End */
 
 
->>>>>>> PirateSlides
 
 /* Header Style */
 
