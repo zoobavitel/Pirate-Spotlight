@@ -1,67 +1,205 @@
 /* CSS Document */
-
+* {
+	box-sizing: border-box;
+	webkit-box-sizing: border-box;
+	moz-box-sizing: border-box;
+}
 /* Main Body Styles */
 
-.Entrance {
-	
+body {
+	background-color: #f8fafc;
+	line-height: 1.428571429;
+	font-family: "Quattrocento", serif;
+	font-size: 14px;
+  	color: #333333;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.Announcements {
-	
+#announcements,
+#suggestions {
+	height: auto;
 }
 
 
-.Spotlight {
-	
+
+.container {
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
-.Hotspots {
-	
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
-.Suggestions {
-	
-}
-
-.Contact {
-	background: #42145F;
-	color: #FFF;
-}
-
-#hotspots {
-	background-color: #FFFFFF;
-	padding: 30px 0px 50px 0px;
+.row::after {
+  clear: both;
 }
 
 .section {
 	display: block;
 }
 
-.container::after { 
-	clear: both;
+body #entrance .container {
+	position: relative;
+	background-color: #FEC923;
+	width: 100%;
 }
 
-::before{
+body #entrance .header {
+	font-size: 14;
+	font-family: "Oswald", sans-serif;
+	color: #00000;
+	padding: 20px 0px 20px 90px;
+}
+
+
+body #announcements .header {
+  font-size: 14;
+  font-family: "Oswald", sans-serif;
+  color: #592A8A;
+  padding: 0px 0px 20px 90px;
+}
+
+body #spotlight .header {
+	font-size: 14;
+  	font-family: "Oswald", sans-serif;
+ 	color: #592A8A;
+  	padding: 0px 0px 20px 90px;
+}
+
+body #hotspots .header {
+  font-size: 14;
+  font-family: "Oswald", sans-serif;
+  color: #592A8A;
+  padding: 0px 0px 20px 90px;
+}
+
+
+
+.col-sm-6 {
+	float: left;
+	width: 50%;
+}
+
+.col-xs-12 {
+  width: 100%;
+}
+
+.col-sm-6,
+.col-xs-12 {
+	position: relative;
+	min-height: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+
+.contact-text {
+	font-size: 1.1em;
+	line-height: 1.2em;
 	box-sizing: border-box;
 }
 
-#news .header {
-  font-size: 2em;
-  font-family: "Oswald", sans-serif;
-  color: #592A8A;
-  padding: 0px 0px 20px 0px;
+body #contact {
+	padding: 20px 0px;
+	color: #FFF;
+	background-color: #592A8A;
 }
 
+
+a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+a {
+	background-color: transparent;
+}
+
+
+.btn {
+  border-radius: 0px;
+  font-family: "Oswald", sans-serif;
+}
+
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.btn.btn-ecu-gold {
+  color: #592A8A;
+  font-weight: 700;
+  background-color: #FEC923;
+  border: 1px solid transparent;
+}
+
+.text-sm-right {
+  text-align: right;
+}
+
+
+body #contact #univ-address {
+	margin-bottom: 0px;
+}
+
+body #contact-text #univ-address {
+	font-size: 1.5em;
+}
+
+body #contact #contact-text {
+	color: #fff;
+	font-size: 1.5em;
+}
+
+body #contact #git-action {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+body #contact #access-links {
+	margin-bottom: 4px;
+}
+
+body #contact {
+	padding: 20px 0px;
+	color: #fff;
+	background-color: #592A8A;
+	font-family: "Oswald", sans-serif;
+}
+
+body #contact .summary {
+	font-size: 14;
+  	font-family: "Oswald", sans-serif;
+  	color: #FFF;
+  	padding: 0px 0px 20px 90px;
+	box-sizing: border-box;
+}
 
 /* Main BOdy Styles End */
 
 
+
 /* Spotlight Buttons*/
-
-body {
-	background-color: #f8fafc;
-}
-
 .slideshow {
 	margin: 0 auto;
 	margin-top: 0px;
@@ -88,9 +226,6 @@ body {
 #i1, #i2, #i3 {
 	display: none;
 }
-
-
-
 
 .pre, .nxt {
 	width: 12%;
@@ -145,29 +280,34 @@ body {
 #i3:checked ~ .dotsnav #dot3{
 	background: #fff;
 }
-
-
-
-
 /* Spotlight End */
 
 
 
-/* Header Style */
+/* Navbar Style */
 
+#nav {
+	overflow: hidden;
+	background-color: #42145F;
+	z-index: 100;
+}
 
-.navbar {
-	padding: 10px 16px;
-	background: #42145F;
-	color: #FFF;
+/* Navbar links */
+#nav a{
+	float: left;
+	display: block;
+	text-decoration: none;
+	padding: 14px;
+	color: #f2f2f2;
+}
+
+body #nav {
+	height: 70px;
 	font-size: 14;
 	font-family: "Oswald", sans-serif;
+	display: block;
 }
 
-.center {
-	background: #42145F;
-	color: #FFF;
-}
 
 .content {
 	padding: 16px;
@@ -183,51 +323,20 @@ body {
 	padding-top: 102px;
 }
 
-/* Header Style End */
-
-/* Table Style */
-
-table {
-	width: 100%;
-	border-spacing: 30px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-th, td {
-	padding: 15px;
-	
-}
+/* Navbar Style End */
 
 
-/* Table Style End */
 
 
 
 /* Entrance Style Start */
-.entrance{
-	position: relative;
-	font-family: "Oswald", sans-serif;
-    color: #000000;
-	background-color: #FEC923;
-	width: 100%;
-	height: 125px;
-	padding: 10px 10px;
-}
-
 .map {
 	position: relative;
-	left: 330px;
-	bottom: 110px;
-	width: 100%;
+	padding-left: 330px;
+	
 }
 
-.desc{
-    color: #42145F;
-	font-family: "Quattrocento", serif;
-    background-color: #6000C4;
-    text-align: left;
-}
+
 
 
 html {
@@ -294,6 +403,13 @@ div.desc {
   content: "";
   display: table;
   clear: both;
+}
+
+.desc{
+    color: #42145F;
+	font-family: "Quattrocento", serif;
+    background-color: #6000C4;
+    text-align: left;
 }
 
 /* Hotspot Style End */
