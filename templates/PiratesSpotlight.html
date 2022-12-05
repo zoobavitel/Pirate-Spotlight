@@ -1,53 +1,47 @@
 <!doctype html>
 <html>
+<body>
 <head>
 <meta charset="utf-8">
-<link href="PiratesSpotlightStyles.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/PiratesSpotlightStyles.css') }}" >
 <title>PiratesSpotlight</title>
 </head>
 
-<body>
 <!-- navbar -->
-
-<header class="navbar" id="pageHeader">
-  <div style="overflow-x: auto;">
-    <table class="center">
-      <tr>
-        <th>Pirates Spotlight</th>
-        <th>Announcements</th>
-        <th>Pirate Of The Week</th>
-        <th>Hotspots</th>
-        <th>Suggestions</th>
-        <th>Contact and About Us</th>
-      </tr>
-    </table>
+<nav id="nav">
+  <div class="nav-content">
+    <nav> <a href="#entrance">Top of Page</a> <a href="#announcements">Announcements</a> <a href="#spotlight">PirateSpotlight</a> <a href="#hotspots">Hotspots</a> <a href="#suggestions">Suggestions</a> <a href="#contact">Contact</a> </nav>
   </div>
-</header>
-</body>
-<!-- Main Webpage Info -->
-<!-- Entrance & Images -->
+</nav>
 
-<div class = "entrance">
-  <h1>For Pirates, By Pirates.</h1>
-</div>
-<div class = "map"><img src="https://www.mediatwo.net/wp-content/uploads/2017/06/282568_x-marks-the-spot-png-1024x404.png" alt="https://www.mediatwo.net/wp-content/uploads/2017/06/282568_x-marks-the-spot-png-1024x404.png" width="1290" height="150"></div>
-<section class="container">
+<!-- Main Webpage Info --> 
+<!-- Entrance & Images -->
+<section id = "entrance" class="section" aria-label="Website Entrance">
+  <div class="container">
+    <div class="header">
+      <div class = "map"><img src="https://www.mediatwo.net/wp-content/uploads/2017/06/282568_x-marks-the-spot-png-1024x404.png">
+        <h1>For Pirates, By Pirates.</h1>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="slideshow">
   <input type="radio" name="images" id="i1" checked>
   <input type="radio" name="images" id="i2">
   <input type="radio" name="images" id="i3">
-  <div class="slide" id="one"><img src="https://www.thecoastlandtimes.com/wp-content/uploads/sites/55/2020/06/ECU-General_Campus-0618.jpg" alt="https://www.thecoastlandtimes.com/wp-content/uploads/sites/55/2020/06/ECU-General_Campus-0618.jpg">
+  <div class="slide" id="one"><img src="" alt="">
     <label for="i3" class="pre"></label>
     <label for="i2" class="nxt"></label>
   </div>
-  <div class="slide" id="two"><img src="https://www.honorsociety.org/sites/default/files/uni-campus-20147" alt="https://www.honorsociety.org/sites/default/files/uni-campus-20147">
+  <div class="slide" id="two"><img src="" alt="">
     <label for="i1" class="pre"></label>
     <label for="i3" class="nxt"></label>
   </div>
-  <div class="slide" id="three"><img src="https://www.scholaradvisor.com/wp-content/uploads/East-Carolina-University.jpg" alt="https://www.scholaradvisor.com/wp-content/uploads/East-Carolina-University.jpg">
+  <div class="slide" id="three"><img src="" alt="">
     <label for="i2" class="pre"></label>
     <label for="i1" class="nxt"></label>
   </div>
-  <div class="nav">
+  <div class="dotsnav">
     <label class="dots" id="dot1" for="i1"></label>
     <label class="dots" id="dot2" for="i2"></label>
     <label class="dots" id="dot3" for="i3"></label>
@@ -55,130 +49,150 @@
 </section>
 
 <!-- Announcements -->
-<section id="Announcements">
-  <h1>Announcements</h1>
-  <h3>Check here for any updates about website downtime, critical university weather, and other updates.</h3>
+<section id="announcements" class="section" aria-label="Website Announcements">
+  <div class="container">
+    <div class="header">
+      <h1>Announcements</h1>
+      <h3>Check here for any updates about website downtime, critical university weather, and other updates.</h3>
+    </div>
+    <div class="double-column">
+      <h2>Fall</h2>
+      <p>Last day of Class 12/5 <br>
+        Final Examinations Begin 12/7 <br>
+        Final Examination End 12/14</p>
+      <h2>Spring</h2>
+      <p>Classes Begin 1/9 <br>
+        State Holiday (no class) 1/16 <br>
+        Spring Break 3/5-3/12 <br>
+        Last day to withdraw without grades 3-23 <br>
+        State Holiday (no class) 4/7-4/8 <br>
+        Classes End 4/25 <br>
+        Final Examinations Begin 4/27 <br>
+        Final Examinations End 5/4</p>
+    </div>
+    <hr>
+  </div>
 </section>
 
 <!-- Pirate of the Week -->
-<section id="Spotlight">
-  <h1>Pirate Of The Week</h1>
-  <h3>Here we showcase one of ECU's own pirate for a week to see how the pirates of today are becoming the inovators of tomorrow.</h3>
-<section class="container">
-  <input type="radio" name="images" id="p1" checked>
-  <input type="radio" name="images" id="p2">
-  <input type="radio" name="images" id="p3">
-  <div class="slide" id="uno"><img src="C:\Users\saleh\csci3030\pirates-spotlight\POTW\StudentCard\Bran_Reed 1.1\ReedJ.png" style="width: 100%" alt="https://www.thecoastlandtimes.com/wp-content/uploads/sites/55/2020/06/ECU-General_Campus-0618.jpg">
-    <label for="p4" class="pre"></label>
-    <label for="p2" class="nxt"></label>
+<section id="spotlight" class="section" aria-label="Website Announcements">
+<div class="container">
+  <div class="header">
+    <h1>Pirate Of The Week</h1>
+    <h3>Here we showcase one of ECU's own pirate for a week to see how the pirates of today are becoming the inovators of tomorrow.</h3>
   </div>
-  <div class="slide" id="dos"><img src="C:\Users\saleh\csci3030\pirates-spotlight\POTW\Walid\Walid's final form.png" style="width: 100%" alt="https://www.honorsociety.org/sites/default/files/uni-campus-20147">
-    <label for="i1" class="pre"></label>
-    <label for="p3" class="nxt"></label>
-  </div>
-  <div class="slide" id="tres"><img src="C:\Users\saleh\csci3030\pirates-spotlight\POTW\StudentCard\Bran_Reed 1.1\BrandonC.png" alt="https://www.scholaradvisor.com/wp-content/uploads/East-Carolina-University.jpg">
-    <label for="p2" class="pre"></label>
-    <label for="p4" class="nxt"></label>
-  </div>
- <div class="slide" id="quatro"><image src="C:\Users\saleh\csci3030\pirates-spotlight\POTW\Frank\Frank's Final Form.png" style="width: 100%" alt="https://www.thecoastlandtimes.com/wp-content/uploads/sites/55/2020/06/ECU-General_Campus-0618.jpg">
-	 <label for="p3" class="pre"></label>
-	 <label for="p1" class="nxt"></label>
-	 </div>
-  <div class="nav">
-    <label class="dots" id="kdot1" for="p1"></label>
-    <label class="dots" id="kdot2" for="p2"></label>
-    <label class="dots" id="kdot3" for="p3"></label>
-	<label class="dots" id="kdot4" for="p4"></label>
-  </div>
-	</section>
+</div>
 </section>
-
-<!-- Hotspots -->
-<section id="hotspot" class="container2">
-  <h1>Hotspots</h1>
-  <h3>Feel like you need a break from the books? Here is where we will share some weekend hotspots for you to relax and have fun at!</h3>
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="img_5terre.jpg">
-      <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
-    </a>
-    <div class="desc">Add a description of the image here</div>
+<div class="spotlight-container">
+  <input type="radio" name="images" id="a1" checked>
+  <input type="radio" name="images" id="a2">
+  <input type="radio" name="images" id="a3">
+  <input type="radio" name="images" id="a4">
+  <div class="slide2" id="a"><img src="{{ url_for('static', filename='POTW/Walid/Walids final form.png') }}" alt="">
+    <label for="a3" class="pre2"></label>
+    <label for="a2" class="nxt2"></label>
   </div>
-</div>
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="img_5terre.jpg">
-      <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
-    </a>
-    <div class="desc">Add a description of the image here</div>
+  <div class="slide2" id="b"><img src="{{ url_for('static', filename='POTW/StudentCard/Bran_Reed 1.1/ReedJ.png') }}" alt="">
+    <label for="a1" class="pre2"></label>
+    <label for="a3" class="nxt2"></label>
   </div>
-</div>
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="img_5terre.jpg">
-      <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
-    </a>
-    <div class="desc">Add a description of the image here</div>
+  <div class="slide2" id="c"><img src="{{ url_for('static', filename='POTW/Frank/Franks Final Form.png') }}" alt="">
+    <label for="a2" class="pre2"></label>
+    <label for="a4" class="nxt2"></label>
   </div>
-</div>
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="img_5terre.jpg">
-      <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
-    </a>
-    <div class="desc">Add a description of the image here</div>
+  <div class="slide2" id="d"><img src="{{ url_for('static', filename='POTW\StudentCard\Bran_Reed 1.1\BrandonC.png') }}" alt="">
+    <label for="a3" class="pre2"></label>
+    <label for="a1" class="nxt2"></label>
+  </div>
+  <div class="dotsnav2">
+    <label class="dots2" id="dota" for="a1"></label>
+    <label class="dots2" id="dotb" for="a2"></label>
+    <label class="dots2" id="dotc" for="a3"></label>
+    <label class="dots2" id="dotd" for="a4"></label>
   </div>
 </div>
 
+<section id="hotspots" class="section" aria-label="Hotspots">
+  <div class="row">
+    <div class="container">
+      <div class="header">
+        <h1>Hotspots</h1>
+        <h3>Feel like you need a break from the books? Here is where we will share some weekend hotspots for you to relax and have fun at!</h3>
+      </div>
+      <div class="responsive">
+        <div class="gallery"> <a target="_blank" href="https://supdogs.com"><img src="https://bloximages.chicago2.vip.townnews.com/piratemedia1.com/content/tncms/assets/v3/editorial/6/b6/6b65a9a4-0ac9-11e8-912b-53dd475fbb68/5a78e44bda4c4.image.png?crop=1128%2C592%2C0%2C66&resize=1128%2C592&order=crop%2Cresize" alt="supdogs" width="600" height="400"></a>
+          <div class="desc">Sup Dogs is described to be "the best food and bar in Greenville"</div>
+        </div>
+      </div>
+      <div class="responsive">
+        <div class="gallery"> <a target="_blank" href="https://www.clubstilllife.com"><img src="https://static.wixstatic.com/media/e5fc8f_903ab5c4340e4a9ea3a8e715519956fe~mv2.jpg/v1/fit/w_524,h_349,q_90/e5fc8f_903ab5c4340e4a9ea3a8e715519956fe~mv2.jpg" alt="stilllife" width="600" height="400"> </a>
+          <div class="desc">Still Life offers a "colorful" nightlife </div>
+        </div>
+      </div>
+      <div class="responsive">
+        <div class="gallery"> <a target="_blank" href="https://www.stumpyshh.com"> <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/99/f9/15/home-of-the-social-throwdown.jpg?w=1200&h=-1&s=1" alt="stumpys" width="600" height="400"> </a>
+          <div class="desc">Stumpy's offers axe throwing as a medium of friendly competition</div>
+        </div>
+      </div>
+      <div class="responsive">
+        <div class="gallery"> <a target="_blank" href="https://www.christyseuropub.com"> <img src="https://images.squarespace-cdn.com/content/v1/627bc287b316db7e70bb1e43/1652282760905-9HUM8F917IIB8VBEH5Y5/Christy%27s+%233-16.jpg?format=2500w" alt="Cinque Terre" width="600" height="400"> </a>
+          <div class="desc">Christy's serves to a "classic" for students and alumni</div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-<div></div>
-
-
-	<!-- Suggestions -->
-	<div class="Suggestions">
-		<h1>Suggestions</h1>
-		<p>PirateSpotlight is a pirate made website that is here to support and highlight ECU students by appealing to what they need, at a moments notice. Our suggestions survey helps us know what the each and every pirate want from this site and helps everyone learn more about our community. To take our suggestion survey <a href="https://docs.google.com/forms/d/e/1FAIpQLSc9yseX-vgDXA3_H7ch86rmIhiJuIlkHJnOFdcCBlfIFRg22w/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">Click here now.</a></p>
-		<!-- Here is the link to edit questions and view responses of the forum:
-			https://docs.google.com/forms/d/e/1FAIpQLSc9yseX-vgDXA3_H7ch86rmIhiJuIlkHJnOFdcCBlfIFRg22w/viewform?usp=sharing -->
-	</div>
-	
-	<!-- Contact and About -->
-	<div class="Contact">
-		<h2>Contact and About Us</h2>
-		<p style="text-align:left;">
-			Created for CSCI 3030 Fall 2022
-			<span style="float:right;">
-				<a href="https://www.ecu.edu/">East Carolina University</a>
-			</span>
-		</p>
-		<p style="text-align:left;">
-			Created by Evan Brown, Cris Zbavitel, Johnny Rebollar, Austin Lee, Saleh Barakat
-			<span style="float:right;">
-				E 5th Street | Greenville, NC 27858
-			</span>
-		</p>
-		<p style="text-align:left;">
-			<a href="https://gitlab.com/cs-department-ecu/csci-3030-fall-2022/section-002/team-18/pirates-spotlight">GitLab Link</a>
-			<span style="float:right;">
-				252-328-6131
-			</span>
-		</p>
-	</div>
+<!-- Suggestions -->
+<section id="suggestions" class="section" aria-label="Hotspots">
+  <div class="container">
+    <div class="header">
+      <h1>Suggestions</h1>
+    </div>
+    <p>PirateSpotlight is a pirate made website that is here to support and highlight ECU students by appealing to what they need, at a moments notice. Our suggestions survey helps us know what the each and every pirate want from this site and helps everyone learn more about our community. To take our suggestion survey <a href="https://docs.google.com/forms/d/e/1FAIpQLSc9yseX-vgDXA3_H7ch86rmIhiJuIlkHJnOFdcCBlfIFRg22w/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">Click here now.</a></p>
+    <!-- Here is the link to edit questions and view responses of the forum:
+			https://docs.google.com/forms/d/e/1FAIpQLSc9yseX-vgDXA3_H7ch86rmIhiJuIlkHJnOFdcCBlfIFRg22w/viewform?usp=sharing --> 
+  </div>
+</section>
+<!-- Contact and About -->
+<section id="contact" class="section" aria-label="Contact">
+<div class="container">
+<div class="row">
+  <div class = "col-xs-12 col-sm-6">
+    <div id="contact-text">Contact & About Us</div>
+  </div>
+  <div id="univ-address"> <a class="ecu-event-tracking" data-ga-category="Footer" data-ga-action="Address" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/place/East+Carolina+University">E 5th Street | Greenville, NC 27858</a>|<a class="ecu-event-tracking" data-ga-category="Footer" data-ga-action="Phone" href="tel:+12523286131">252-328-6131</a> </div>
+  <div class="col-xs-12 col-sm-6 text-sm-right">
+    <div id="access-links">Created by Evan Brown, Cris Zbavitel, Johnny Rebollar, Austin Lee, Saleh Barakat</div>
+    <div id="copyrights">Created for CSCI 3030 Fall 2022</div>
+  </div>
+  <div class="row">
+    <div class = "col-xs-12 col-sm-6">
+      <div id="git-action"> <a class="btn btn-ecu-gold ecu-event-tracking" data-ga-category="Footer" data-ga-action="Git" href="https://gitlab.com/cs-department-ecu/csci-3030-fall-2022/section-002/team-18/pirates-spotlight">GitLab Link<span class="fa fa-chevron-right" aria-hidden="true"></span></a> </div>
+      <div class="summary"><a href="https://www.ecu.edu/">East Carolina University</a></div>
+    </div>
+  </div>
+</div>
+</section>
 <script>
 		// Header Style
-		window.onscroll = function() {headerFunction()};
+		// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
 
-		var navbar = document.getElementById("pageHeader");
+		// Get the navbar
+var nav = document.getElementById("nav");
 
-		var sticky = header.offsetTop;
+		// Get the offset position of the navbar
+var sticky = nav.offsetTop;
 
-		function headerFunction() {
-			if (window.pageYOffset > sticky) {
-				header.classList.add("sticky");
-			} else {
-				header.classList.remove("sticky");
-			}
-		}
+		// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+	if (window.pageYOffset >= sticky) {
+		nav.classList.add("sticky")
+  	} else {
+		nav.classList.remove("sticky");
+  	}
+} 
 		// Header Style End
-	</script>
+</script>
+</body>
 </html>
