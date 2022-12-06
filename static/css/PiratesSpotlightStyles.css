@@ -70,20 +70,12 @@ body #hotspots .header {
   color: #592A8A;
   padding: 20px 0px 20px 90px;
 }
-<<<<<<< HEAD
 body #suggestions .header {
   font-size: 14;
   font-family: "Oswald", sans-serif;
   color: #592A8A;
   padding: 0px 0px 20px 90px;
 }
-=======
-
-body #suggestions .header {
-	padding: 19px 0px 20px 90px;
-}
-
->>>>>>> 983610dde5b884788b2c2a8ac3bb699602751adf
 .col-sm-6 {
   float: left;
   width: 50%;
