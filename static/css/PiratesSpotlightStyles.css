@@ -19,6 +19,10 @@ body {
 
 #announcements, 
 
+.double-column {
+	column-count: 2;
+}
+
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -28,6 +32,8 @@ body {
 .row {
   margin-left: -15px;
   margin-right: -15px;
+	content: " ";
+display: table;
 }
 .row::after {
   clear: both;
@@ -62,15 +68,28 @@ body #hotspots .header {
   font-size: 14;
   font-family: "Oswald", sans-serif;
   color: #592A8A;
-  padding: 0px 0px 20px 90px;
+  padding: 20px 0px 20px 90px;
 }
+
+body #suggestions .header {
+	padding: 19px 0px 20px 90px;
+}
+
 .col-sm-6 {
   float: left;
   width: 50%;
 }
 .col-xs-12 {
   width: 100%;
+	float: left;
 }
+.col-md-9, .col-xs-12 {
+	position: relative;
+	min-height: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
 .col-sm-6, .col-xs-12 {
   position: relative;
   min-height: 1px;
@@ -239,7 +258,7 @@ body #contact .summary {
   width: 100%;
   height: 100%;
 }
-#a1, #a2, #a3, a4 {
+#a1, #a2, #a3 {
   display: none;
 }
 .pre2, .nxt2 {
@@ -275,7 +294,7 @@ body #contact .summary {
   display: inline-block;
   background: rgba(0, 0, 0, .6);
 }
-#a1:checked ~ #a, #a2:checked ~ #b, #a3:checked ~ #c, #a3:checked ~ #d {
+#a1:checked ~ #a, #a2:checked ~ #b, #a3:checked ~ #c, #a4:checked ~ #d {
   z-index: 9;
 }
 #a1:checked ~ .dotsnav2 #dota, #a2:checked ~ .dotsnav2 #dotb, #a3:checked ~ .dotsnav2 #dotc, #a4:checked ~ .dotsnav2 #dotd {
